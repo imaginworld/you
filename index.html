@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" bg-black">
+    <!-- //////////////////////////////nav section////////////////////// -->
+    <nav class="bg-white-200 text-white  mt-6 md:flex md:items-center md:justify-between">
+        <img src="https://w7.pngwing.com/pngs/904/660/png-transparent-anime-manga-black-and-white-desktop-manga-boy-black-hair-monochrome-boy-thumbnail.png"
+            alt="vicky" class="w-12 rounded-full mx-8 ">
+        <ul class="px-24 py-2  space-x-16 mr-10  font-semibold text-2xl  md:flex md:items-center ">
+            
+                <li class=" cursor-pointer ml-16 ">home</li>
+                <li class=" cursor-pointer  ">about</li>
+                <li class=" cursor-pointer   text-blue-300">catagery</li>
+                <li class=" cursor-pointer  text-blue-300">contact us</li>
+          
+        </ul>
+    </nav>
+    <!-- ///////////////  next section ///////////////////////-->
+
+
+    <div class="flex mx-8 ">
+        <div class="h-auto mt-40 px-40  text-white ">
+            <h1 class="text-4xl font-bold h-20 subpixel-antialiased ">“All the pain forced <span
+                    class="text-blue-400">me to grow up”</span> </h1>
+            <p class="w-20/12 text-2xl line-clamp-3">Love is the reason why there is pain. When we lose someone precious
+                to us,
+                hate is born.
+                <span class="text-blue-400"> We are just ordinary people driven to revenge in the name of justice .
+                </span>
+            </p>
+            <div>
+                <button class="bg-blue-300 w-32 p-2 text-black mt-9 rounded-full" id="open">click</button>
+                <div class="bg-[#2f63ab11] w-9/12 mt-3 hidden rounded-md p-3" id="popup">
+                    <div class="p-3" id="popup-contant">
+                        <h2 class="text-center text-4xl ">my self</h2>
+                        <p class="text-md pt-3">Lorem ipsum, dolor sit amet <span class="text-blue-400">consectetur
+                                adipisicing elit. Praesentium, numquam voluptas autem repudiandae provident inventore
+                                odio pariatur id dolor sapiente, ex explicabo?</span></p>
+                        <button class="bg-[#2f63ab] w-32 p-2 text-black mt-9 rounded-md " id="close">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" mr-30 mt-24 -z-10 w-11/12">
+            <img src="img/unnamed-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+  
+      
+
+    <script>
+
+        let a = document.getElementById('popup');
+        let b = document.getElementById('open');
+        let c = document.getElementById('close');
+        let isOpen = false;
+        b.addEventListener('click', () => {
+            if (!isOpen) {
+                popup.style.display = 'block';
+                isOpen = true;
+            } else {
+                popup.style.display = 'none';
+                isOpen = false;
+            }
+        })
+
+        c.addEventListener('click', () => {
+            popup.style.display = 'none';
+        })
+
+    </script>
+</body>
+
+</html>
